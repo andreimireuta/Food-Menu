@@ -301,6 +301,7 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
 }
 
 .signup-form-input{
+    margin-top: 1.5rem;
     width:30rem;
     height:4.5rem;
     padding:1rem;
@@ -337,5 +338,13 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     padding-top: 3rem;
     width: 100%;
     text-align: center;
+}
+
+
+
+
+/*Aici incepe partea de navbar-------------------------------------------------*/
+.navbar{
+    
 }
 
