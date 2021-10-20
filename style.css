@@ -160,3 +160,8 @@ html{
 
 /*Aici incepe sectiunea 3---------------------------------------------*/
 
+.section3{
+    width: 100%;
+    height:100vh;
+    background-color:#333;
+}
