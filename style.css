@@ -266,5 +266,76 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     transition: opacity 0.3s;
 }
 
+/*Aici incepe sectiunea de footer a site-ului----------------------------*/
+/*am folosit flexbox in footer pentru a aranja elementele
+    am setat space arround pentru a le departe unul de celalalt si am pus paragraful in josul paginii folosind 
+    pozitia absoluta 
+*/
 
+.section4{
+    width:100%;
+    height:25vh;
+    background-color:#111 ;
+    display: flex;
+    justify-content: space-around;  /*  le desparte pe fiecare lasand exact acelasi spatiu intre fiecare element*/
+    padding:3rem 0;
+    align-items: flex-start;
+    position: relative;
+}
+.section4-text{
+    text-transform: uppercase;
+}
+.footer-heading{
+    font-size: 4rem;
+    font-weight: 900;
+    color: orangered;
+}
+.footer-paragraph{
+    font-size:1.6rem;
+    color:#999;
+
+}
+.signup-form{
+    display:flex;
+    align-items: center;
+}
+
+.signup-form-input{
+    width:30rem;
+    height:4.5rem;
+    padding:1rem;
+    border:0.2rem solid orangered;
+    border-radius: 0.2rem;
+    color: orangered;
+    font-size:1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+
+}
+.signup-form-input::placeholder{
+    color:sienna;
+}
+.signup-form-btn{
+    position: relative;
+    left:-4.2rem;
+    width: 3.5rem;
+    height:3.5rem;
+    background-color: #333;
+    color: orangered;
+    border: none;
+    font-size: 1.8rem;
+    cursor:pointer;
+}
+.copyright{
+    position:absolute;
+    bottom:3rem;
+    color: #fff;
+    font-size:1.4rem;
+    letter-spacing:0.15rem;
+    font-weight: 100;
+    border-top: 0.11rem solid #999;
+    padding-top: 3rem;
+    width: 100%;
+    text-align: center;
+}
 
