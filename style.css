@@ -161,7 +161,81 @@ html{
 /*Aici incepe sectiunea 3---------------------------------------------*/
 
 .section3{
-    width: 100%;
-    height:100vh;
+    /* width: 100%;*/
+    height:100vh; 
+    padding:5rem 0;
     background-color:#333;
+}
+.gallery-items{
+    /* height: 65vh; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 5rem;
+
+}
+.gallery-link{
+    position:relative;
+    margin: 3rem 2rem; 
+}
+
+/*am facut prima data toate liniile si textul si l-am pus peste imagine in locurile corespunzatoare,
+dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde si liniile orizontale si verticale*/
+.gallery-link:hover::before{
+    height: 85%;
+}
+
+.gallery-link::before{
+    content: '';
+    position: absolute;
+    width: 0.2rem;
+    height:0;
+    background-color:white;
+    top:2rem;
+    left:85%;
+}
+.gallery-link::after{
+    content: '';
+    position: absolute;
+    height: 0.2rem;
+    width:0;
+    background-color:#fff;
+    top:5rem;
+    right:1rem;
+}
+
+.food-image{
+    width: 26vw;
+    height:25vh;
+    object-fit: cover; /*am folosit pentru a face ca imaginea sa fie pe tot spatiul disponibil din containerul sau*/
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.1rem #e92,  /*ultima proprietate este blur*/
+                0.5rem 0.5rem 0.1rem #a2e,
+                0.8rem 0.8rem 0.1rem red;
+}
+.food-name{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-transform:uppercase;
+    top:2rem;
+    width:0;
+    left:4rem;
+    overflow: hidden;
+}
+.food-description{
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    width: 70%;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color:#fff;
+    opacity: 0;
+    visibility: hidden;
 }
