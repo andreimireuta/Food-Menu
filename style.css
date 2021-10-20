@@ -185,24 +185,47 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
 .gallery-link:hover::before{
     height: 85%;
 }
+.gallery-link:hover::after{
+    width: 88%;
+}
+.gallery-link:hover .food-name{
+    width:90%;
+    transition: width 1.2s ; /*pentru a parea ca textul este scris normal*/
+}
+.gallery-link:hover .food-description{
+    opacity: 1;
+    visibility:visible;
+    transition: opacity 0.5s 0.5s;
+}
+.gallery-link:hover .food-image{
+    transition: all 0.5s ease;
+    opacity:0.5;
+    filter: blur(0.2rem);
+    box-shadow: 1rem 1rem 0.1rem #e92,  /*ultima proprietate este blur*/
+                2rem 2rem 0.1rem #a2e,
+                3rem 3rem 0.1rem red;
+    transform: scale(1.1);
+}
 
 .gallery-link::before{
-    content: '';
-    position: absolute;
-    width: 0.2rem;
+    content: ''; /*am setat contentul sa fie null*/
+    position: absolute;  /*pozitia absoluta pentru a putea fi peste text si poza*/
+    width: 0.2rem;  /*am setat latimea fixa si lungimea procentual, pentru ca este o linia verticala*/
     height:0;
     background-color:white;
-    top:2rem;
+    top:2rem;  /*pozitionari pentru a arata bine*/
     left:85%;
+    transition: all 0.5s  ease ; /*pentrua a avea un efect de linie care coboara de sus*/
 }
 .gallery-link::after{
     content: '';
     position: absolute;
-    height: 0.2rem;
+    height: 0.2rem; /*aici linia este orizontala, din acest motiv am setat lungimea, iar latimea este procentuala*/
     width:0;
     background-color:#fff;
     top:5rem;
     right:1rem;
+    transition: all 0.5s  ease ; /*pentrua a avea un efect de linie care coboara de sus*/
 }
 
 .food-image{
@@ -213,6 +236,7 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     box-shadow: 0.3rem 0.3rem 0.1rem #e92,  /*ultima proprietate este blur*/
                 0.5rem 0.5rem 0.1rem #a2e,
                 0.8rem 0.8rem 0.1rem red;
+    transition: all 0.5s;
 }
 .food-name{
     position: absolute;
@@ -221,7 +245,7 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     font-weight: 700;
     letter-spacing: 0.5rem;
     text-transform:uppercase;
-    top:2rem;
+    top:1.5rem;
     width:0;
     left:4rem;
     overflow: hidden;
@@ -238,4 +262,5 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     color:#fff;
     opacity: 0;
     visibility: hidden;
+    transition: opacity 0.3s;
 }
