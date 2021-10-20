@@ -178,6 +178,7 @@ html{
 .gallery-link{
     position:relative;
     margin: 3rem 2rem; 
+    z-index: 10;
 }
 
 /*am facut prima data toate liniile si textul si l-am pus peste imagine in locurile corespunzatoare,
@@ -264,3 +265,6 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     visibility: hidden;
     transition: opacity 0.3s;
 }
+
+
+
