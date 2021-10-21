@@ -413,6 +413,37 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     left:1.8rem;
 
 }
+/* @media (max-width:1630px){
+    html{
+        font-size:50%;
+    }
+    .section2{
+        height: auto;
+        padding: 10rem 0 12rem 0;
+    }
+    .container-card{
+        margin-top:10rem;
+    }
+    .navbar{
+        top:-19rem;
+    }
+    .navbar.change{
+        height: 12vh;
+    }
+    .card{
+        height:35%;
+        width:33%;
+    }
+    .gallery-link{
+        width: 40rem;
+        /* height:25rem; 
+    }
+    .food-image{
+        width:100%;
+        height:200%;
+        margin:2rem;
+    }
+} */
 
 @media (max-width:1400px){
     html{
@@ -445,15 +476,9 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
         margin:2rem;
     }
 }
-@media (max-width:1200px){
-    html{
-        font-size:50%;
-    }
-    .section2{
-        height: auto;
-        padding: 10rem 0 12rem 0;
-    }
-    .container-card{
+ @media (max-width:1250px){
+
+    /* .container-card{
         margin-top:10rem;
     }
     .navbar{
@@ -462,27 +487,38 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     .navbar.change{
         height: 12vh;
     }
-    .card{
-        height:38vh;
-        width:35rem;
-    }
+   */
     .gallery-link{
         width: 40rem;
-        /* height:25rem; */
+        height:25rem;
+    }
+    .gallery-items{
+        flex-wrap: wrap;
+    }
+    .section3{
+        height:auto;
     }
     .food-image{
         width:100%;
-        height:200%;
-        margin:2rem;
+        height:100%;
+        margin-right:7rem;
+    } 
+    .card{
+        height:39vh;
+        width:30rem;
     }
-}
+} 
 
-@media (max-width:1050px){
+@media (max-width:1150px){
     .section-heading{
         font-size: 9rem;
         margin: 0 5rem;
     }
-    .section-1-icons{
+    .gallery-link{
+        width: 35rem;
+        height:25rem;
+    }
+    .section-1-icons i{
         font-size: 20rem;
     }
     .container-card{
