@@ -349,13 +349,18 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     height: 15vh;
     background-color:#000;
     position: fixed;
-    top:0;
+    top:-15rem;
     color: #aaa;
     z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow:0.3rem 0.3rem 0.2rem #111  ;
+    transition:top 0.5s ;
+}
+.navbar.change{
+    top:0rem;
+    transition:top 0.5s 0.2s;
 }
 .navbar-link{
     color:#aaa;
@@ -386,15 +391,106 @@ dupa care l-am ascuns, si am setat height si width ca sa fie 0, pentru a ascunde
     height:6rem;
     background-color:#000;
     position: fixed;
-    top:17rem;
+    top:2rem;
     left:15rem;
     border-radius:30rem 30rem 15rem 15rem;
     box-shadow: 0.1rem 0.1rem 0.1rem black,
                 -0.1rem -0.1rem 0.1rem black;
     cursor: pointer;
+    transition:top 0.5s 0.2s;  /*a doua proprietate este deelay-ul pe care il acordam pana la tranzitie*/
+}
+.menu.change{
+    top:18rem;
+    transition:top 0.5s ;
 }
 .menu::before{
     content: '';
+    width: 0.3rem;
+    height: 18rem;
+    background-color:#000;
+    position: absolute;
+    top: -15rem;
+    left:1.8rem;
 
+}
+
+@media (max-width:1400px){
+    html{
+        font-size:50%;
+    }
+    .section2{
+        height: auto;
+        padding: 10rem 0 12rem 0;
+    }
+    .container-card{
+        margin-top:10rem;
+    }
+    .navbar{
+        top:-19rem;
+    }
+    .navbar.change{
+        height: 12vh;
+    }
+    .card{
+        height:38vh;
+        width:35rem;
+    }
+    .gallery-link{
+        width: 40rem;
+        /* height:25rem; */
+    }
+    .food-image{
+        width:100%;
+        height:200%;
+        margin:2rem;
+    }
+}
+@media (max-width:1200px){
+    html{
+        font-size:50%;
+    }
+    .section2{
+        height: auto;
+        padding: 10rem 0 12rem 0;
+    }
+    .container-card{
+        margin-top:10rem;
+    }
+    .navbar{
+        top:-19rem;
+    }
+    .navbar.change{
+        height: 12vh;
+    }
+    .card{
+        height:38vh;
+        width:35rem;
+    }
+    .gallery-link{
+        width: 40rem;
+        /* height:25rem; */
+    }
+    .food-image{
+        width:100%;
+        height:200%;
+        margin:2rem;
+    }
+}
+
+@media (max-width:1050px){
+    .section-heading{
+        font-size: 9rem;
+        margin: 0 5rem;
+    }
+    .section-1-icons{
+        font-size: 20rem;
+    }
+    .container-card{
+        flex-wrap: wrap;
+
+    }
+    .card{
+        margin: 5rem;
+    }
 }
 

@@ -22,5 +22,16 @@ setInterval( () =>{
 
 },3000);
 
+document.querySelector('.menu').addEventListener('click',()=>{
+    var menus=document.querySelector('.menu');
+    var menus1= document.querySelector('.navbar');
+
+    menus.classList.toggle('change');
+    menus1.classList.toggle('change');
+
+    // console.log("am dat clcick");
+    // console.log(menus1);
+});
+
 //dam ca parametri o functie si un interval in care vrem sa executam aceasta functie
 // intrevalul este in ms . inn czul nostru ne va crea un interval de 4s
